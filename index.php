@@ -28,8 +28,10 @@
         <div>
             Lunghezza Password scelta: 
             <?php 
-            if(isset($_GET["passLenght"]) && !empty($_GET["passLenght"])){ //controllo se l'array get[lengthPSW] esiste o se è vuoto
+            if(isset($_GET["passLenght"]) && !empty($_GET["passLenght"])){ 
                 echo $_GET["passLenght"];
+                // isset restituisce FALSE se una variabile è stata impostata a NULL .
+                // empty è utile per controllare se un determinato valore passante è o meno vuoto.
             }   
             ?>
         </div>
